@@ -63,8 +63,8 @@ public class ArrayMergeSort
      */
     public static void main(String[] args)
     {
-        int[] a = {1,4,6,90}; 
-        int[] b = {2,3,5,80, 100, 200};
+        int[] a = {1,4,6,9,78}; 
+        int[] b = {2,4,5,6,7};
         
         int c[] = ArrayMergeSort.merge(a, b);
         

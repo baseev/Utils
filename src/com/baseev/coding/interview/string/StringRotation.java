@@ -5,8 +5,8 @@ public class StringRotation
     public static boolean checkRotation(String s1, String s2) {
         int len = s1.length();
         if(len == s2.length() && len > 0) {
-            String s1s2 = s1+s2;
-            return s1s2.toLowerCase().contains(s2);
+            String s1s1 = s1+s1;
+            return s1s1.toLowerCase().contains(s2);
         }
         return false;
     }

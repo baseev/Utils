@@ -18,7 +18,6 @@ package com.baseev.coding.interview.sort;
 //       If the range of numbers is to large, the bucket array can't be
 //       allocated and the method will fail.
 
-import java.lang.*;
 import java.io.*;
 import java.util.*;
 
