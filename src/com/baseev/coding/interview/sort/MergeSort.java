@@ -6,16 +6,6 @@ public class MergeSort
     private int[] tempMergArr;
     private int length;
 
-    public static void main(String a[])
-    {
-        int[] inputArr = { 45, 23, 11, 89, 77, 98, 4, 28, 65, 43 };
-        MergeSort ms = new MergeSort();
-        ms.sort(inputArr);
-        for (int i : inputArr) {
-            System.out.print(i + " ");
-        }
-    }
-
     public void sort(int[] inputArr)
     {
         array = inputArr;
@@ -63,4 +53,18 @@ public class MergeSort
         }
 
     }
+
+
+
+    public static void main(String a[])
+    {
+        int[] inputArr = { 45, 23, 11, 89, 77, 98, 4, 28, 65, 43 };
+        MergeSort ms = new MergeSort();
+        ms.sort(inputArr);
+        for (int i : inputArr) {
+            System.out.print(i + " ");
+        }
+    }
+
+
 }

@@ -24,19 +24,19 @@ public class Stack1
     int [] stackpointer = {0,0,0};
     
     void push(int stackNum, int value) {
-        int index = stackNum * stackNum + stackpointer[stackNum] + 1;
+        int index = stackNum * stackSize + stackpointer[stackNum] + 1;
         stackpointer[stackNum]++;
         buffer[index] = value;
     }
     
     int pop(int stackNum) {
-        int index = stackNum * stackNum + stackpointer[stackNum];
+        int index = stackNum * stackSize + stackpointer[stackNum];
         stackpointer[stackNum]--;
         return buffer[index];
     }
     
     int peep(int stackNum) {
-        int index = stackNum * stackNum + stackpointer[stackNum];
+        int index = stackNum * stackSize + stackpointer[stackNum];
         return buffer[index];
     }
     

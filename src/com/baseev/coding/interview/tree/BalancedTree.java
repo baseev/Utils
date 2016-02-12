@@ -30,7 +30,23 @@ public class BalancedTree
         return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
     
-    public static boolean isBalanced(Node root){
+    public static boolean isBalanced1(Node root){
         return (maxDepth(root) - minDepth(root) <= 1);
     }
+    
+    public static boolean isBalanced2(Node root){
+    	int lHeight=0, rHeight=0;
+    	if(root == null) {
+    		return true;
+    	}
+    	
+    	lHeight = maxDepth(root.left);
+    	rHeight = maxDepth(root.right);
+    	
+    	if((lHeight - rHeight <= 1) && isBalanced2(root.left) && isBalanced2(root.right)) {
+    		return true;
+    	}
+    	return false;
+    }
+       
 }

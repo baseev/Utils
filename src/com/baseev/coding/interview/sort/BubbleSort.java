@@ -1,6 +1,6 @@
 package com.baseev.coding.interview.sort;
-import java.util.Arrays;
 
+import java.util.Arrays;
 
 public class BubbleSort
 {

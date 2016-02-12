@@ -5,6 +5,8 @@ public class Node<T>
     public T data;
     public Node left;
     public Node right;
+    public Node nextRight;
+    public Node next;
     
     public Node(T m_data) {
         data = m_data;

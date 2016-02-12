@@ -4,7 +4,7 @@ import java.util.Hashtable;
 
 public class RemoveDuplicate
 {
-    public static void removeDup(Node node) {
+    public static void removeDuplicate(Node node) {
         Hashtable table = new Hashtable();
         Node previous = null;
         while(node!=null) {
@@ -18,6 +18,19 @@ public class RemoveDuplicate
         }
     }
 
+    public static void removeDuplicateFromSorted(Node node) {
+    	Node current = node;
+    	Node _next;
+    	while(current.next != null) {
+    		if(current.data == current.next.data) {
+    			_next = current.next.next;
+    			current.next = _next;
+    		} else {
+    			current = current.next;
+    		}
+    	}
+    }
+    
     /**
      * @param args
      */

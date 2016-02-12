@@ -21,6 +21,7 @@ public class SelectionSort
                     numbers[j] = temp ;
                 }
             }
+            System.out.println(Arrays.toString(numbers));
         }
         System.out.println(Arrays.toString(numbers));
     }
@@ -32,6 +33,8 @@ public class SelectionSort
     public static void main(String[] args)
     {
         int[] array = { 45, 23, 11, 89, 77, 98, 4, 28, 65, 43 };
+        System.out.println(Arrays.toString(array));
+        System.out.println("==================================================================");
         SelectionSort s = new SelectionSort(array);
 
     }

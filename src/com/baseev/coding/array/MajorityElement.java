@@ -1,4 +1,4 @@
-package com.baseev.coding.g4g;
+package com.baseev.coding.array;
 
 public class MajorityElement
 {
@@ -27,7 +27,7 @@ public class MajorityElement
      */
     public static void main(String[] args)
     {
-        int[] a = {3, 3, 4, 2, 4, 4, 2, 4, 4, 1};
+        int[] a = {3, 3, 4, 2, 4, 4, 2, 4, 7, 1};
         int mElement = MajorityElement.getCandidate(a, a.length);
         System.out.println(mElement);
     }

@@ -4,7 +4,7 @@ public class PrintDuplicates
 {
 
     public static void doPrint(String str) {
-        int arr[]
+        int arr[];
     }
     /**
      * @param args
